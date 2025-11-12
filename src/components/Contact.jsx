@@ -4,6 +4,7 @@ import { Button } from "./ui/button";
 import { Mail, Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
 import Toast from "./ToastMessage";
 import emailjs from '@emailjs/browser';
+import { links } from "../data/data";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -66,7 +67,7 @@ const Contact = () => {
             Get In <span className="text-red-600">Touch</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Have a project in mind or want to collaborate? I'd love to hear from
+          Have a project, job opening, or want to collaborate? I'd love to hear from
             you. Let's create something amazing together.
           </p>
         </div>
@@ -86,19 +87,19 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-white font-medium">Email</p>
-                  <p className="text-gray-300">contact@example.com</p>
+                  <p className="text-gray-300">{links.mailLink}</p>
                 </div>
               </div>
 
-              <div className="flex items-center">
+              {/* <div className="flex items-center">
                 <div className="bg-red-600 p-3 rounded-lg mr-4">
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <p className="text-white font-medium">Phone</p>
-                  <p className="text-gray-300">+1 (555) 123-4567</p>
+                  <p className="text-gray-300">+91 7040538219</p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex items-center">
                 <div className="bg-red-600 p-3 rounded-lg mr-4">
@@ -106,7 +107,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-white font-medium">Location</p>
-                  <p className="text-gray-300">San Francisco, CA</p>
+                  <p className="text-gray-300">Bangalore, India</p>
                 </div>
               </div>
             </div>
@@ -118,7 +119,7 @@ const Contact = () => {
               </h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://github.com"
+                  href={links.gitHubLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gray-800 p-3 rounded-lg hover:bg-red-600 transition-colors duration-300"
@@ -126,7 +127,7 @@ const Contact = () => {
                   <Github className="w-6 h-6 text-white" />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href={links.linkedInLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gray-800 p-3 rounded-lg hover:bg-red-600 transition-colors duration-300"
@@ -219,7 +220,7 @@ const Contact = () => {
                     required
                     rows={5}
                     className="w-full rounded-md border border-gray-600 bg-gray-800 px-3 py-2 text-base text-white shadow-sm placeholder-gray-400 focus:border-red-500 focus:outline-none focus:ring-1 focus:ring-red-500 resize-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-                    placeholder="Tell me about your project or how we can work together..."
+                    placeholder="Looking to collaborate or hire? Drop me a message below!"
                   />
                 </div>
 

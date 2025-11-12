@@ -276,3 +276,10 @@ export const categories = [
   "Professional",
   "Personal",
 ];
+
+export const links = {
+  gitHubLink: "https://github.com/techwithpranjal",
+  linkedInLink: "https://www.linkedin.com/in/pranjal-jadhav851/",
+  mailLink: "pranjaljadhav851@gmail.com",
+};
+

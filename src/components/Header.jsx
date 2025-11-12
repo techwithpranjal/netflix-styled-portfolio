@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 // import { Button } from './ui/button';
 import { Menu, X, Github, Linkedin, Mail } from "lucide-react";
+import { links } from "../data/data";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,7 +48,7 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <div className="hidden md:flex space-x-3">
               <a
-                href="https://github.com/DebugWithPranjal"
+                href={links.gitHubLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors duration-200"
@@ -55,7 +56,7 @@ const Header = () => {
                 <Github size={20} />
               </a>
               <a
-                href="www.linkedin.com/in/pranjal-jadhav851"
+                href={links.linkedInLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors duration-200"
@@ -63,7 +64,7 @@ const Header = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="mailto:pranjaljadhav851@gmail.com"
+                href={"mailto:" + links.mailLink}
                 className="text-gray-400 hover:text-white transition-colors duration-200"
               >
                 <Mail size={20} />
@@ -95,7 +96,7 @@ const Header = () => {
 
               <div className="flex space-x-4 pt-4 border-t border-gray-800">
                 <a
-                  href="https://github.com"
+                  href={links.gitHubLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors duration-200"
@@ -103,7 +104,7 @@ const Header = () => {
                   <Github size={20} />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href={links.linkedInLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors duration-200"
@@ -111,7 +112,7 @@ const Header = () => {
                   <Linkedin size={20} />
                 </a>
                 <a
-                  href="mailto:contact@example.com"
+                  href={"mailto:" + links.mailLink}
                   className="text-gray-400 hover:text-white transition-colors duration-200"
                 >
                   <Mail size={20} />

@@ -112,7 +112,7 @@ const ProjectCard = ({ project, onViewDetails }) => {
               }}
             >
               <ExternalLink className="w-4 h-4 mr-2" />
-              Read Paper
+              Link
             </Button>
           )}
         </div>
