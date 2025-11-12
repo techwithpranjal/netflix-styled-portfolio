@@ -5,7 +5,7 @@ import DocumentImageDenoising from "../assets/images/document-image-denoising.jp
 import DocImageRestoration from "../assets/images/doc-img-restoration.jpeg";
 import PatchEncoderDocImg from "../assets/images/patch-encoder-doc-img.png";
 
-export const dataProjects = [
+export const projects = [
   {
     id: 1,
     title: "Hungry Monkey Game",
@@ -217,53 +217,82 @@ export const dataProjects = [
   },
 ];
 
-export const dataSkills = [
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Node.js",
-  "Python",
-  "MongoDB",
-  "PostgreSQL",
-  "Docker",
-  "Kubernetes",
-  "AWS",
-  "Git",
-  "GraphQL",
-  "Redux",
-  "Express",
-  "Flask",
-  "TensorFlow",
-  "Socket.io",
-  "Redis",
-  "Microservices",
-  "REST APIs",
-];
+export const skillCategories = {
+  "Frontend Development": [
+    "HTML5",
+    "CSS3",
+    "JavaScript (ES6+)",
+    "TypeScript",
+    "React.js",
+    "Redux Toolkit",
+    "Tailwind CSS",
+    "Material UI",
+    "Responsive Web Design",
+  ],
+  "Backend Development": [
+    "Python",
+    "Flask",
+    "RESTful APIs",
+    "Microservices Architecture",
+    "OAuth2",
+    "JWT",
+    "RBAC",
+  ],
+  Databases: ["PostgreSQL", "MySQL"],
+  "DevOps & Cloud": [
+    "Docker",
+    "Kubernetes",
+    "GitLab CI/CD",
+    "Pivotal Cloud Foundry",
+    "AWS (S3)",
+  ],
+  "Testing & Quality": [
+    "Jest",
+    "Vitest",
+    "PyTest",
+    "Postman (API Testing)",
+    "Test-Driven Development (TDD)",
+  ],
+  "Software Practices": [
+    "GitHub",
+    "Agile Methodologies",
+    "Jira",
+    "Pair Programming",
+    "CI/CD Workflows",
+    "System Design",
+  ],
+};
 
-export const dataExperience = [
+export const experience = [
   {
     id: 1,
-    company: "Tech Innovations Inc.",
-    position: "Senior Full Stack Developer",
-    duration: "2022 - Present",
+    company: "Dell Technologies",
+    team: "Behavioral Science",
+    position: "Software Developer 2",
+    location: "Bangalore",
+    duration: "Feb 2024 - Present",
     description:
-      "Lead development of enterprise web applications using React, Node.js, and cloud technologies. Mentor junior developers and architect scalable solutions.",
+      "Built automated UI scoring tools improving WCAG compliance. Deployed Flask APIs on Kubernetes, increasing uptime by 40%. Led NLP-driven chat analytics cutting manual effort by 50%, and introduced TDD with Jest & Vitest for full CI/CD maturity.",
   },
   {
     id: 2,
-    company: "Digital Solutions Co.",
-    position: "Software Developer",
-    duration: "2020 - 2022",
+    company: "Dell Technologies",
+    team: "Customer Sentiment",
+    position: "Software Developer 1",
+    location: "Hyderabad",
+    duration: "Aug 2022 - Jan 2024",
     description:
-      "Developed and maintained multiple client projects using modern web technologies. Collaborated with cross-functional teams to deliver high-quality software solutions.",
+      "Migrated CSAT apps to DDS 2.0 and built a unified VoCaaS platform with React & Flask, boosting adoption by 60%. Automated issue tracking reduced stakeholder effort by 50%, with secure RBAC via OAuth2 & JWT.",
   },
   {
     id: 3,
-    company: "StartupX",
-    position: "Junior Developer",
-    duration: "2019 - 2020",
+    company: "Dell Technologies",
+    position: "Software Intern",
+    location: "Bangalore",
+    team: "Employee Lifecycle",
+    duration: "Jun 2021 - Jul 2021",
     description:
-      "Built responsive web applications and contributed to the development of core platform features. Gained experience in agile development methodologies.",
+      "Built Grafana dashboards for real-time Workday monitoring, reducing troubleshooting time by one-third weekly.",
   },
 ];
 
@@ -282,4 +311,3 @@ export const links = {
   linkedInLink: "https://www.linkedin.com/in/pranjal-jadhav851/",
   mailLink: "pranjaljadhav851@gmail.com",
 };
-

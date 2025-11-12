@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { dataProjects, categories } from "../data/data";
+import { projects, categories } from "../data/data";
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
 import { Button } from "./ui/button";
@@ -12,8 +12,8 @@ const Projects = () => {
 
   const filteredProjects =
     selectedCategory === "All"
-      ? dataProjects
-      : dataProjects.filter((project) =>
+      ? projects
+      : projects.filter((project) =>
           project.categories.includes(selectedCategory)
         );
 
