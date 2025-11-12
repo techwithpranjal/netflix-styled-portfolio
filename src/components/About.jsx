@@ -2,7 +2,15 @@ import React from "react";
 import { experience, skillCategories } from "../data/data";
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
-import { Code2, Server, Database, Cloud, Calendar, MapPin } from "lucide-react";
+import {
+  Code2,
+  Server,
+  Database,
+  Cloud,
+  Calendar,
+  MapPin,
+  GraduationCap,
+} from "lucide-react";
 
 const About = () => {
   const getCategoryIcon = (category) => {
@@ -35,6 +43,7 @@ const About = () => {
           </p>
         </div>
 
+        {/* Journey + Experience */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           {/* Personal Introduction */}
           <div>
@@ -72,7 +81,7 @@ const About = () => {
               Experience
             </h3>
             <div className="space-y-6">
-              {experience.map((exp, index) => (
+              {experience.map((exp) => (
                 <Card key={exp.id} className="bg-gray-800 border-gray-700">
                   <CardContent className="p-6">
                     <div className="flex items-start justify-between mb-3">
@@ -81,19 +90,20 @@ const About = () => {
                           {exp.position}
                         </h4>
                         <p className="text-red-500 font-medium mb-1">
-                          {exp.company} | {exp.team}
+                          {exp.company} {exp.team ? `| ${exp.team}` : ""}
                         </p>
-                        <div className="flex items-center text-gray-400 text-sm">
-                          <MapPin className="w-4 h-4 mr-1" />
-                          {exp.location}
-                        </div>
+                        {exp.location && (
+                          <div className="flex items-center text-gray-400 text-sm">
+                            <MapPin className="w-4 h-4 mr-1" />
+                            {exp.location}
+                          </div>
+                        )}
                       </div>
                       <div className="flex items-center text-gray-400 text-sm">
                         <Calendar className="w-4 h-4 mr-1" />
                         {exp.duration}
                       </div>
                     </div>
-
                     <p className="text-gray-300 text-sm leading-relaxed">
                       {exp.description}
                     </p>
@@ -102,6 +112,38 @@ const About = () => {
               ))}
             </div>
           </div>
+        </div>
+
+        {/* Education Section */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
+            <span className="w-1 h-8 bg-red-600 mr-4"></span>
+            Education
+          </h3>
+          <Card className="bg-gray-800 border-gray-700">
+            <CardContent className="p-6">
+              <div className="flex items-start justify-between mb-2">
+                <div>
+                  <h4 className="text-lg font-semibold text-white flex items-center">
+                    <GraduationCap className="w-5 h-5 text-red-500 mr-2" />
+                    Cummins College of Engineering for Women, Pune
+                  </h4>
+                  <p className="text-gray-400 text-sm">
+                    B.Tech in Information Technology
+                  </p>
+                </div>
+                <div className="flex items-center text-gray-400 text-sm">
+                  <Calendar className="w-4 h-4 mr-1" /> Aug 2018 – May 2022
+                </div>
+              </div>
+              <p className="text-gray-300 text-sm mt-2">
+                Thesis on <span className="italic text-gray-200">
+                  “Document Image Restoration Techniques using Generative Neural Networks.”
+                </span>{" "}
+                Graduated with <span className="text-red-500 font-medium">CGPA 8.8</span>.
+              </p>
+            </CardContent>
+          </Card>
         </div>
 
         {/* Skills Section */}
