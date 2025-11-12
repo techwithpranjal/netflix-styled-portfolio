@@ -47,7 +47,7 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <div className="hidden md:flex space-x-3">
               <a
-                href="https://github.com"
+                href="https://github.com/DebugWithPranjal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors duration-200"
@@ -55,7 +55,7 @@ const Header = () => {
                 <Github size={20} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="www.linkedin.com/in/pranjal-jadhav851"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors duration-200"
@@ -63,7 +63,7 @@ const Header = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="mailto:contact@example.com"
+                href="mailto:pranjaljadhav851@gmail.com"
                 className="text-gray-400 hover:text-white transition-colors duration-200"
               >
                 <Mail size={20} />

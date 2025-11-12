@@ -1,21 +1,31 @@
-import React, { useState } from 'react';
-import { mockProjects, categories } from '../data/mock';
-import ProjectCard from './ProjectCard';
-import ProjectModal from './ProjectModal';
-import { Button } from './ui/button';
-import { Filter } from 'lucide-react';
+import React, { useState } from "react";
+import { dataProjects, categories } from "../data/data";
+import ProjectCard from "./ProjectCard";
+import ProjectModal from "./ProjectModal";
+import { Button } from "./ui/button";
+import { Filter } from "lucide-react";
 
 const Projects = () => {
-  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedProject, setSelectedProject] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const filteredProjects = selectedCategory === 'All' 
-    ? mockProjects 
-    : mockProjects.filter(project => project.category === selectedCategory);
+  const filteredProjects =
+    selectedCategory === "All"
+      ? dataProjects
+      : dataProjects.filter((project) =>
+          project.categories.includes(selectedCategory)
+        );
 
-  const featuredProjects = filteredProjects.filter(project => project.featured);
-  const regularProjects = filteredProjects.filter(project => !project.featured);
+  const highlightedProjects = filteredProjects.filter(
+    (project) => project.type === "highlighted"
+  );
+  const regularProjects = filteredProjects.filter(
+    (project) => project.type === "regular"
+  );
+  const publications = filteredProjects.filter(
+    (project) => project.type === "publication"
+  );
 
   const handleViewDetails = (project) => {
     setSelectedProject(project);
@@ -33,11 +43,12 @@ const Projects = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Featured <span className="text-red-600">Projects</span>
+            Projects & <span className="text-red-600">Publications</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Explore my latest software development projects, showcasing full-stack applications, 
-            APIs, and innovative solutions built with modern technologies.
+            Explore my latest software development projects & publications,
+            showcasing full-stack applications, APIs, and innovative solutions
+            built with modern technologies.
           </p>
         </div>
 
@@ -52,9 +63,10 @@ const Projects = () => {
               key={category}
               variant={selectedCategory === category ? "default" : "outline"}
               className={`
-                ${selectedCategory === category 
-                  ? 'bg-red-600 hover:bg-red-700 text-white' 
-                  : 'border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white'
+                ${
+                  selectedCategory === category
+                    ? "bg-red-600 hover:bg-red-700 text-white"
+                    : "border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white"
                 }
                 transition-all duration-300
               `}
@@ -65,15 +77,15 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Featured Projects Section */}
-        {featuredProjects.length > 0 && (
+        {/* Highlighted Projects Section */}
+        {highlightedProjects.length > 0 && (
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-white mb-8 flex items-center">
               <span className="w-1 h-8 bg-red-600 mr-4"></span>
-              Featured Projects
+              Highlighted Projects
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {featuredProjects.map((project) => (
+              {highlightedProjects.map((project) => (
                 <ProjectCard
                   key={project.id}
                   project={project}
@@ -86,13 +98,32 @@ const Projects = () => {
 
         {/* Regular Projects Section */}
         {regularProjects.length > 0 && (
-          <div>
+          <div className="mb-16">
             <h3 className="text-2xl font-bold text-white mb-8 flex items-center">
               <span className="w-1 h-8 bg-gray-600 mr-4"></span>
-              All Projects
+              Other Projects
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {regularProjects.map((project) => (
+                <ProjectCard
+                  key={project.id}
+                  project={project}
+                  onViewDetails={handleViewDetails}
+                />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Publications Section */}
+        {publications.length > 0 && (
+          <div>
+            <h3 className="text-2xl font-bold text-white mb-8 flex items-center">
+              <span className="w-1 h-8 bg-gray-600 mr-4"></span>
+              Publications
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {publications.map((project) => (
                 <ProjectCard
                   key={project.id}
                   project={project}

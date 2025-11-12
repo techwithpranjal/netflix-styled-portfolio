@@ -1,24 +1,24 @@
 import React from 'react';
-import { mockSkills, mockExperience } from '../data/mock';
+import { dataSkills, dataExperience } from '../data/data';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { Code2, Server, Database, Cloud, Calendar } from 'lucide-react';
 
 const About = () => {
   const skillCategories = {
-    'Frontend': mockSkills.filter(skill => 
+    'Frontend': dataSkills.filter(skill => 
       ['JavaScript', 'TypeScript', 'React', 'Redux'].includes(skill)
     ),
-    'Backend': mockSkills.filter(skill => 
+    'Backend': dataSkills.filter(skill => 
       ['Node.js', 'Python', 'Express', 'Flask', 'GraphQL', 'REST APIs'].includes(skill)
     ),
-    'Database': mockSkills.filter(skill => 
+    'Database': dataSkills.filter(skill => 
       ['MongoDB', 'PostgreSQL', 'Redis'].includes(skill)
     ),
-    'DevOps & Cloud': mockSkills.filter(skill => 
+    'DevOps & Cloud': dataSkills.filter(skill => 
       ['Docker', 'Kubernetes', 'AWS', 'Git', 'Microservices'].includes(skill)
     ),
-    'Other': mockSkills.filter(skill => 
+    'Other': dataSkills.filter(skill => 
       ['TensorFlow', 'Socket.io'].includes(skill)
     )
   };
@@ -81,7 +81,7 @@ const About = () => {
               Experience
             </h3>
             <div className="space-y-6">
-              {mockExperience.map((exp, index) => (
+              {dataExperience.map((exp, index) => (
                 <Card key={exp.id} className="bg-gray-800 border-gray-700">
                   <CardContent className="p-6">
                     <div className="flex items-start justify-between mb-3">
