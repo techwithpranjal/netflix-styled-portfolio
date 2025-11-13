@@ -4,6 +4,7 @@ import customerSurveyAnalytics from "../assets/images/customer-survey-analytics.
 import DocumentImageDenoising from "../assets/images/document-image-denoising.jpeg";
 import DocImageRestoration from "../assets/images/doc-img-restoration.jpeg";
 import PatchEncoderDocImg from "../assets/images/patch-encoder-doc-img.png";
+import VerzeoCertification from "../assets/images/verzeo-internship-certificate.jpg";
 
 export const projects = [
   {
@@ -241,6 +242,7 @@ export const skillCategories = {
   Databases: ["PostgreSQL", "MySQL"],
   "DevOps & Cloud": [
     "Docker",
+    "Podman",
     "Kubernetes",
     "GitLab CI/CD",
     "Pivotal Cloud Foundry",
@@ -271,6 +273,7 @@ export const experience = [
     position: "Software Developer 2",
     location: "Bangalore",
     duration: "Feb 2024 - Present",
+    type: "work",
     description:
       "Built automated UI scoring tools improving WCAG compliance. Deployed Flask APIs on Kubernetes, increasing uptime by 40%. Led NLP-driven chat analytics cutting manual effort by 50%, and introduced TDD with Jest & Vitest for full CI/CD maturity.",
   },
@@ -281,6 +284,7 @@ export const experience = [
     position: "Software Developer 1",
     location: "Hyderabad",
     duration: "Aug 2022 - Jan 2024",
+    type: "work",
     description:
       "Migrated CSAT apps to DDS 2.0 and built a unified VoCaaS platform with React & Flask, boosting adoption by 60%. Automated issue tracking reduced stakeholder effort by 50%, with secure RBAC via OAuth2 & JWT.",
   },
@@ -291,9 +295,22 @@ export const experience = [
     location: "Bangalore",
     team: "Employee Lifecycle",
     duration: "Jun 2021 - Jul 2021",
+    type: "work",
     description:
       "Built Grafana dashboards for real-time Workday monitoring, reducing troubleshooting time by one-third weekly.",
   },
+  {
+    id: 4,
+    company: "Cummins College of Engineering for Women",
+    position: "BTech in Information Technology",
+    location: "Pune",
+    duration: "Aug 2018 - May 2022",
+    type: "education",
+    description:
+      "Thesis on “Document Image Restoration Techniques using Generative Neural Networks.” Graduated with CGPA 8.8. Relevant coursework: Data Structures, Algorithms, Database Management, Computer Networks, Machine Learning, Web Development.",
+
+
+  }
 ];
 
 export const categories = [
@@ -311,3 +328,49 @@ export const links = {
   linkedInLink: "https://www.linkedin.com/in/pranjal-jadhav851/",
   mailLink: "pranjaljadhav851@gmail.com",
 };
+
+export const certifications = [
+  {
+    id: 1,
+    title: "ReactJS, Routers & Redux",
+    description: "Comprehensive hands-on course covering React Hooks, Redux Toolkit, and React Router.",
+    skills: ["React", "Redux", "Routing", "Hooks", "SPAs"],
+    year: "2024",
+    linkUrl: "https://www.udemy.com/certificate/XXXX/",
+    image:
+      "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=800&h=600&fit=crop",
+  },
+  {
+    id: 2,
+    title: "REST APIs with Flask & Python",
+    description: "Built RESTful APIs with authentication, database models, and deployment best practices.",
+    skills: ["Flask", "Python", "REST APIs", "JWT"],
+    year: "2023",
+    linkUrl: "https://trainings.internshala.com/verify-certificate/D5C76B35-4325-F8DB-72C7-9ECE6FCB78F1/",
+
+  },
+  {
+    id: 3,
+    title: "Deep Learning",
+    description: "Mastered neural networks, CNNs, and sequence models with TensorFlow and Keras.",
+    skills: ["Deep Learning", "TensorFlow", "Keras", "CNN"],
+    year: "2023",
+    linkUrl: "https://www.coursera.org/account/accomplishments/verify/MQQJQMZD9G5H"
+  },
+  {
+    id: 4,
+    title: "Machine Learning",
+    description: "Learned ML algorithms including regression, SVM, and clustering using Python.",
+    skills: ["Machine Learning", "Python", "Scikit-learn"],
+    year: "2022",
+    linkUrl: "https://www.coursera.org/account/accomplishments/verify/6JGSYZAB4PVM",
+  },
+  {
+    id: 5,
+    title: "Full Stack Web Development",
+    description: "Completed a project-driven course on frontend and backend web development.",
+    skills: ["HTML", "CSS", "JavaScript", "React", "Node.js"],
+    year: "2021",
+    linkUrl: VerzeoCertification,
+  },
+];

@@ -10,6 +10,7 @@ import {
   Calendar,
   MapPin,
   GraduationCap,
+  Briefcase,
 } from "lucide-react";
 
 const About = () => {
@@ -44,7 +45,7 @@ const About = () => {
         </div>
 
         {/* Journey + Experience */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Personal Introduction */}
           <div>
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
@@ -78,109 +79,91 @@ const About = () => {
           <div>
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
               <span className="w-1 h-8 bg-red-600 mr-4"></span>
-              Experience
+              Experience & Education
             </h3>
-            <div className="space-y-6">
-              {experience.map((exp) => (
-                <Card key={exp.id} className="bg-gray-800 border-gray-700">
-                  <CardContent className="p-6">
-                    <div className="flex items-start justify-between mb-3">
-                      <div>
-                        <h4 className="text-lg font-semibold text-white">
-                          {exp.position}
-                        </h4>
-                        <p className="text-red-500 font-medium mb-1">
-                          {exp.company} {exp.team ? `| ${exp.team}` : ""}
-                        </p>
-                        {exp.location && (
-                          <div className="flex items-center text-gray-400 text-sm">
-                            <MapPin className="w-4 h-4 mr-1" />
-                            {exp.location}
-                          </div>
-                        )}
+
+            <div className="relative border-l border-gray-700 pl-6 space-y-8">
+              {/* Vertical timeline line */}
+              {experience.map((exp, index) => (
+                <div key={exp.id} className="relative flex gap-6 items-start">
+                  {/* Timeline icon */}
+                  <div className="absolute -left-3 flex items-center justify-center w-6 h-6 rounded-full bg-gray-900 border border-red-600 text-red-500">
+                    {exp.type === "work" ? (
+                      <Briefcase className="w-3.5 h-3.5" />
+                    ) : (
+                      <GraduationCap className="w-3.5 h-3.5" />
+                    )}
+                  </div>
+
+                  {/* Experience Card */}
+                  <Card className="flex-1 bg-gray-800 border-gray-700 hover:border-red-600 transition-colors duration-300">
+                    <CardContent className="p-6">
+                      <div className="flex items-start justify-between mb-3">
+                        <div>
+                          <h4 className="text-lg font-semibold text-white">
+                            {exp.position}
+                          </h4>
+                          <p className="text-red-500 font-medium mb-1">
+                            {exp.company} {exp.team ? `| ${exp.team}` : ""} 
+                            
+                          </p>
+                          {/* {exp.location && (
+                            <div className="flex items-center text-gray-400 text-sm">
+                              <MapPin className="w-4 h-4 mr-1" />
+                              {exp.location}
+                            </div>
+                          )} */}
+                        </div>
+                        <div className="flex items-center text-gray-400 text-sm">
+                          <Calendar className="w-4 h-4 mr-1" />
+                          {exp.duration}
+                        </div>
                       </div>
-                      <div className="flex items-center text-gray-400 text-sm">
-                        <Calendar className="w-4 h-4 mr-1" />
-                        {exp.duration}
-                      </div>
-                    </div>
-                    <p className="text-gray-300 text-sm leading-relaxed">
-                      {exp.description}
-                    </p>
-                  </CardContent>
-                </Card>
+                      <p className="text-gray-300 text-sm leading-relaxed">
+                        {exp.description}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
               ))}
             </div>
           </div>
         </div>
 
-        {/* Education Section */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
-            <span className="w-1 h-8 bg-red-600 mr-4"></span>
-            Education
-          </h3>
-          <Card className="bg-gray-800 border-gray-700">
-            <CardContent className="p-6">
-              <div className="flex items-start justify-between mb-2">
-                <div>
-                  <h4 className="text-lg font-semibold text-white flex items-center">
-                    <GraduationCap className="w-5 h-5 text-red-500 mr-2" />
-                    Cummins College of Engineering for Women, Pune
-                  </h4>
-                  <p className="text-gray-400 text-sm">
-                    B.Tech in Information Technology
-                  </p>
-                </div>
-                <div className="flex items-center text-gray-400 text-sm">
-                  <Calendar className="w-4 h-4 mr-1" /> Aug 2018 – May 2022
-                </div>
-              </div>
-              <p className="text-gray-300 text-sm mt-2">
-                Thesis on <span className="italic text-gray-200">
-                  “Document Image Restoration Techniques using Generative Neural Networks.”
-                </span>{" "}
-                Graduated with <span className="text-red-500 font-medium">CGPA 8.8</span>.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-
         {/* Skills Section */}
-        <div>
-          <h3 className="text-2xl font-bold text-white mb-8 flex items-center">
+        <div className="mt-16">
+          <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
             <span className="w-1 h-8 bg-red-600 mr-4"></span>
             Technical Skills
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {Object.entries(skillCategories).map(
-              ([category, skills]) =>
-                skills.length > 0 && (
-                  <Card
-                    key={category}
-                    className="bg-gray-800 border-gray-700 hover:border-red-600 transition-colors duration-300"
-                  >
-                    <CardContent className="p-6">
-                      <div className="flex items-center mb-4">
-                        {getCategoryIcon(category)}
-                        <h4 className="text-lg font-semibold text-white ml-3">
-                          {category}
-                        </h4>
-                      </div>
-                      <div className="flex flex-wrap gap-2">
-                        {skills.map((skill, index) => (
-                          <Badge
-                            key={index}
-                            variant="secondary"
-                            className="bg-gray-700 text-gray-300 hover:bg-red-600 hover:text-white transition-colors duration-300"
-                          >
-                            {skill}
-                          </Badge>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
-                )
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            {Object.entries(skillCategories).map(([category, skills]) =>
+              skills.length > 0 ? (
+                <Card
+                  key={category}
+                  className="bg-gray-800 border-gray-700 hover:border-red-600 transition-colors duration-300"
+                >
+                  <CardContent className="p-6">
+                    <div className="flex items-center mb-4">
+                      {getCategoryIcon(category)}
+                      <h4 className="text-lg font-semibold text-white ml-3">
+                        {category}
+                      </h4>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {skills.map((skill, index) => (
+                        <Badge
+                          key={index}
+                          variant="secondary"
+                          className="bg-gray-700 text-gray-300 hover:bg-red-600 hover:text-white transition-colors duration-300"
+                        >
+                          {skill}
+                        </Badge>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              ) : null
             )}
           </div>
         </div>
