@@ -76,6 +76,18 @@ const Certifications = () => {
                     View Certificate
                   </Button>
                 )}
+
+                {cert.courseUrl && (
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="border-gray-600 text-gray-300 hover:bg-gray-800 flex-1 w-full"
+                    onClick={() => window.open(cert.linkUrl, "_blank")}
+                  >
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    View Curriculum
+                  </Button>
+                )}
               </CardContent>
             </Card>
           ))}
