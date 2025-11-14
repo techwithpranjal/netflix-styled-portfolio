@@ -5,6 +5,7 @@ import DocumentImageDenoising from "../assets/images/document-image-denoising.jp
 import DocImageRestoration from "../assets/images/doc-img-restoration.jpeg";
 import PatchEncoderDocImg from "../assets/images/patch-encoder-doc-img.png";
 import VerzeoCertification from "../assets/images/verzeo-internship-certificate.jpg";
+import CCNACert from "../assets/images/CCNA-cert.png";
 
 export const projects = [
   {
@@ -347,7 +348,6 @@ export const certifications = [
     skills: ["Flask", "Python", "REST APIs", "JWT"],
     year: "2023",
     linkUrl: "https://trainings.internshala.com/verify-certificate/D5C76B35-4325-F8DB-72C7-9ECE6FCB78F1/",
-
   },
   {
     id: 3,
@@ -373,4 +373,21 @@ export const certifications = [
     year: "2021",
     linkUrl: VerzeoCertification,
   },
+  {
+    id: 6,
+    title: "Data Science",
+    description: "Gained skills in data analysis, visualization, and statistical modeling using Python.",
+    skills: ["Data Science", "Python", "Pandas", "Matplotlib"],
+    year: "2021",
+    linkUrl: "https://trainings.internshala.com/verify-certificate/D5C76B35-4325-F8DB-72C7-9ECE6FCB78F1/",
+  },
+  {
+    id: 7,
+    title: "Cisco Certified Network Associate Routing and Switching (CCNA)",
+    description: "Validated knowledge of networking fundamentals, IP connectivity, and security.",
+    skills: ["Networking", "Routing", "Switching", "Security"],
+    year: "2020",
+    linkUrl: CCNACert
+
+  }
 ];
