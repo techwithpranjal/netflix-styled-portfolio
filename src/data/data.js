@@ -8,6 +8,7 @@ import VerzeoCertification from "../assets/images/verzeo-internship-certificate.
 import CCNACert from "../assets/images/CCNA-cert.png";
 import portfolioPreview from "../assets/images/netflix-styled-portfolio.png";
 import authServicePreview from "../assets/images/rbac.jpeg";
+import toDesktopClone from "../assets/images/to-desktop-clone.png";
 
 export const projects = [
   {
@@ -176,29 +177,51 @@ export const projects = [
     type: "regular",
     completedDate: "2023-10-01",
   },  
+  // {
+  //   id: 6,
+  //   title: "Machine Learning Model API",
+  //   description:
+  //     "RESTful API serving trained ML models for image classification with automated model versioning and A/B testing.",
+  //   longDescription:
+  //     "Developed a production-ready API service for deploying and serving machine learning models. The service supports multiple model versions, A/B testing capabilities, and automated model updates. Built with Flask and integrated with TensorFlow Serving, it provides endpoints for image classification, sentiment analysis, and recommendation systems. The API includes comprehensive monitoring, logging, and performance metrics collection. Docker containerization ensures consistent deployment across environments.",
+  //   technologies: [
+  //     "Python",
+  //     "Flask",
+  //     "TensorFlow",
+  //     "Docker",
+  //     "PostgreSQL",
+  //     "Redis",
+  //   ],
+  //   categories: ["Backend"],
+  //   image:
+  //     "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=600&fit=crop",
+  //   demoUrl: null,
+  //   githubUrl: "https://github.com/username/ml-api",
+  //   type: "regular",
+  //   completedDate: "2024-01-25",
+  // },
   {
-    id: 6,
-    title: "Machine Learning Model API",
+    id: 7,
+    title: "ToDesktop UI Clone",
+    subtitle: "A modern desktop-style web UI built with Tailwind CSS",
     description:
-      "RESTful API serving trained ML models for image classification with automated model versioning and A/B testing.",
+      "A sleek ToDesktop-inspired web app clone with smooth animations, floating UI elements, and interactive customizations.",
     longDescription:
-      "Developed a production-ready API service for deploying and serving machine learning models. The service supports multiple model versions, A/B testing capabilities, and automated model updates. Built with Flask and integrated with TensorFlow Serving, it provides endpoints for image classification, sentiment analysis, and recommendation systems. The API includes comprehensive monitoring, logging, and performance metrics collection. Docker containerization ensures consistent deployment across environments.",
+      "Built a clean and modern ToDesktop-style interface using Tailwind CSS, focusing on seamless animations, floating card layouts, and interactive toggle controls. The project recreates the look and feel of desktop application customization panels, with a refined design system, smooth hover transitions, responsive layouts, and modular component organization. Ideal for showcasing UI/UX craftsmanship and animation work using utility-first CSS.",
     technologies: [
-      "Python",
-      "Flask",
-      "TensorFlow",
-      "Docker",
-      "PostgreSQL",
-      "Redis",
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "JavaScript",
+      "Animations"
     ],
-    categories: ["Backend"],
-    image:
-      "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=600&fit=crop",
-    demoUrl: null,
-    githubUrl: "https://github.com/username/ml-api",
+    categories: ["Frontend", "Personal"],
+    image: toDesktopClone + "?w=800&h=600&fit=crop",
+    demoUrl: "https://techwithpranjal.github.io/to-desktop-clone/",
+    githubUrl: "https://github.com/techwithpranjal/to-desktop-clone",
     type: "regular",
-    completedDate: "2024-01-25",
-  },
+    completedDate: "2025-02-01"
+  },  
   {
     id: 7,
     title: "Overview of Document Image Denoising and Restoration Techniques",
