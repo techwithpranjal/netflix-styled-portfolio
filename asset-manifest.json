@@ -1,23 +1,26 @@
 {
   "files": {
     "main.css": "/netflix-styled-portfolio/static/css/main.69c6da1b.css",
-    "main.js": "/netflix-styled-portfolio/static/js/main.aeb3b9dd.js",
+    "main.js": "/netflix-styled-portfolio/static/js/main.68b7880d.js",
     "static/js/453.670e15c7.chunk.js": "/netflix-styled-portfolio/static/js/453.670e15c7.chunk.js",
+    "static/media/netflix-styled-portfolio.png": "/netflix-styled-portfolio/static/media/netflix-styled-portfolio.31e824c3d8dfaa20bbe0.png",
     "static/media/hungry-monkey-game.png": "/netflix-styled-portfolio/static/media/hungry-monkey-game.610108f797cacd207a6a.png",
     "static/media/CCNA-cert.png": "/netflix-styled-portfolio/static/media/CCNA-cert.b7e2af42d7e98cf0cb0b.png",
+    "static/media/to-desktop-clone.png": "/netflix-styled-portfolio/static/media/to-desktop-clone.dc5fcf83e45d1ec131fd.png",
     "static/media/verzeo-internship-certificate.jpg": "/netflix-styled-portfolio/static/media/verzeo-internship-certificate.1e3bf4ca72273cc11d06.jpg",
     "static/media/patch-encoder-doc-img.png": "/netflix-styled-portfolio/static/media/patch-encoder-doc-img.da88c0956109be57ad34.png",
     "static/media/doc-img-restoration.jpeg": "/netflix-styled-portfolio/static/media/doc-img-restoration.59a07dbc83157df77107.jpeg",
     "static/media/customer-survey-analytics.jpeg": "/netflix-styled-portfolio/static/media/customer-survey-analytics.e48efd775f58d8f01ad0.jpeg",
     "static/media/document-image-denoising.jpeg": "/netflix-styled-portfolio/static/media/document-image-denoising.9f478204fff20aee6ada.jpeg",
     "static/media/design-scoring-tool.avif": "/netflix-styled-portfolio/static/media/design-scoring-tool.f171464a683c4fc52e2a.avif",
+    "static/media/rbac.jpeg": "/netflix-styled-portfolio/static/media/rbac.3b83d7f84621b5275328.jpeg",
     "index.html": "/netflix-styled-portfolio/index.html",
     "main.69c6da1b.css.map": "/netflix-styled-portfolio/static/css/main.69c6da1b.css.map",
-    "main.aeb3b9dd.js.map": "/netflix-styled-portfolio/static/js/main.aeb3b9dd.js.map",
+    "main.68b7880d.js.map": "/netflix-styled-portfolio/static/js/main.68b7880d.js.map",
     "453.670e15c7.chunk.js.map": "/netflix-styled-portfolio/static/js/453.670e15c7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.69c6da1b.css",
-    "static/js/main.aeb3b9dd.js"
+    "static/js/main.68b7880d.js"
   ]
 }
