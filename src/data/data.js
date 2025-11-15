@@ -6,6 +6,8 @@ import DocImageRestoration from "../assets/images/doc-img-restoration.jpeg";
 import PatchEncoderDocImg from "../assets/images/patch-encoder-doc-img.png";
 import VerzeoCertification from "../assets/images/verzeo-internship-certificate.jpg";
 import CCNACert from "../assets/images/CCNA-cert.png";
+import portfolioPreview from "../assets/images/netflix-styled-portfolio.png";
+import authServicePreview from "../assets/images/rbac.jpeg";
 
 export const projects = [
   {
@@ -81,52 +83,99 @@ export const projects = [
     type: "highlighted",
     completedDate: "2024-08-15",
   },
+  // {
+  //   id: 4,
+  //   title: "API Gateway Service",
+  //   description:
+  //     "Microservices API gateway with rate limiting, authentication, load balancing, and monitoring capabilities.",
+  //   longDescription:
+  //     "Designed and implemented a robust API gateway service to manage microservices communication. The gateway handles authentication, rate limiting, request routing, load balancing, and provides comprehensive monitoring and logging capabilities. Built with Node.js and Redis for caching, it supports both REST and GraphQL APIs. The service includes circuit breaker patterns for fault tolerance and integrates with monitoring tools like Prometheus and Grafana for observability.",
+  //   technologies: [
+  //     "Node.js",
+  //     "Redis",
+  //     "Docker",
+  //     "Kubernetes",
+  //     "Prometheus",
+  //     "GraphQL",
+  //   ],
+  //   categories: ["Backend"],
+  //   image:
+  //     "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop",
+  //   demoUrl: null,
+  //   githubUrl: "https://github.com/username/api-gateway",
+  //   type: "regular",
+  //   completedDate: "2024-04-05",
+  // },
   {
     id: 4,
-    title: "API Gateway Service",
+    title: "Netflix-Styled Developer Portfolio",
+    subtitle: "A modern personal portfolio inspired by Netflix UI",
     description:
-      "Microservices API gateway with rate limiting, authentication, load balancing, and monitoring capabilities.",
+      "A sleek, Netflix-inspired portfolio featuring card-based sections, rich animations, and a bold red-black theme.",
     longDescription:
-      "Designed and implemented a robust API gateway service to manage microservices communication. The gateway handles authentication, rate limiting, request routing, load balancing, and provides comprehensive monitoring and logging capabilities. Built with Node.js and Redis for caching, it supports both REST and GraphQL APIs. The service includes circuit breaker patterns for fault tolerance and integrates with monitoring tools like Prometheus and Grafana for observability.",
-    technologies: [
-      "Node.js",
-      "Redis",
-      "Docker",
-      "Kubernetes",
-      "Prometheus",
-      "GraphQL",
-    ],
-    categories: ["Backend"],
-    image:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop",
-    demoUrl: null,
-    githubUrl: "https://github.com/username/api-gateway",
-    type: "regular",
-    completedDate: "2024-04-05",
-  },
-  {
-    id: 5,
-    title: "Real-time Chat Application",
-    description:
-      "Multi-room chat application with file sharing, emoji reactions, user presence indicators, and message encryption.",
-    longDescription:
-      "Built a feature-rich real-time chat application supporting multiple chat rooms, private messaging, and group conversations. The application includes advanced features like file sharing, emoji reactions, typing indicators, user presence status, and end-to-end message encryption. The frontend is built with React and TypeScript, while the backend uses Node.js with Socket.io for real-time communication. MongoDB stores chat history and user data with proper indexing for optimal performance.",
+      "Designed and developed a fully responsive developer portfolio styled after Netflix’s signature UI. Built with React, Tailwind CSS, and Framer Motion, the site uses cinematic layouts, dynamic hover interactions, category-based project carousels, and polished section transitions. Includes a custom contact form powered by EmailJS, a timeline-based Experience & Education section, and an optimized two-column About layout. The design emphasizes accessibility, performance, and storytelling through a visually engaging interface inspired by the Netflix dashboard.",
     technologies: [
       "React",
-      "TypeScript",
-      "Node.js",
-      "Socket.io",
-      "MongoDB",
-      "Crypto-js",
+      "Tailwind CSS",
+      "Framer Motion",
+      "JavaScript",
+      "EmailJS"
     ],
-    categories: ["Full Stack"],
-    image:
-      "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=800&h=600&fit=crop",
-    demoUrl: "https://demo-chat.example.com",
-    githubUrl: "https://github.com/username/chat-app",
+    categories: ["Frontend", "Personal"],
+    image: portfolioPreview + "?w=800&h=600&fit=crop",
+    demoUrl: "https://techwithpranjal.github.io/netflix-styled-portfolio/",
+    githubUrl: "https://github.com/techwithpranjal/netflix-styled-portfolio",
     type: "regular",
-    completedDate: "2023-12-18",
-  },
+    completedDate: "2025-01-15",
+  },  
+  // {
+  //   id: 5,
+  //   title: "Real-time Chat Application",
+  //   description:
+  //     "Multi-room chat application with file sharing, emoji reactions, user presence indicators, and message encryption.",
+  //   longDescription:
+  //     "Built a feature-rich real-time chat application supporting multiple chat rooms, private messaging, and group conversations. The application includes advanced features like file sharing, emoji reactions, typing indicators, user presence status, and end-to-end message encryption. The frontend is built with React and TypeScript, while the backend uses Node.js with Socket.io for real-time communication. MongoDB stores chat history and user data with proper indexing for optimal performance.",
+  //   technologies: [
+  //     "React",
+  //     "TypeScript",
+  //     "Node.js",
+  //     "Socket.io",
+  //     "MongoDB",
+  //     "Crypto-js",
+  //   ],
+  //   categories: ["Full Stack"],
+  //   image:
+  //     "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=800&h=600&fit=crop",
+  //   demoUrl: "https://demo-chat.example.com",
+  //   githubUrl: "https://github.com/username/chat-app",
+  //   type: "regular",
+  //   completedDate: "2023-12-18",
+  // },
+  {
+    id: 5,
+    title: "Centralized Auth & RBAC Service",
+    subtitle: "OAuth2 + JWT-based authentication and authorization platform",
+    description:
+      "Developed a centralized authentication and authorization service using OAuth2 and JWT, enabling secure role-based access for 15+ enterprise applications.",
+    longDescription:
+      "Designed and implemented a production-grade authentication and authorization platform leveraging OAuth 2.0 and JWT tokens. Built Role-Based Access Control (RBAC) to standardize permissions across 15+ internal applications, reducing duplicated security logic and improving compliance. Integrated granular role and privilege assignment, token lifecycle management, service-to-service authentication, and audit logging. Collaborated with cross-functional teams to onboard applications seamlessly and enhance security posture across the ecosystem.",
+    technologies: [
+      "OAuth2",
+      "JWT",
+      "RBAC",
+      "Python Flask",
+      "REST APIs",
+      "CI/CD",
+      "Kubernetes"
+    ],
+    categories: ["Backend", "Professional"],
+    image: authServicePreview + "?w=800&h=600&fit=crop",
+    demoUrl: "",
+    githubUrl: "",
+    summaryUrl: "https://example.com/auth-rbac-service-summary.pdf",
+    type: "regular",
+    completedDate: "2023-10-01",
+  },  
   {
     id: 6,
     title: "Machine Learning Model API",
