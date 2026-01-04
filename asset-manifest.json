@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/netflix-styled-portfolio/static/css/main.69c6da1b.css",
-    "main.js": "/netflix-styled-portfolio/static/js/main.bc925983.js",
+    "main.css": "/netflix-styled-portfolio/static/css/main.9683fd33.css",
+    "main.js": "/netflix-styled-portfolio/static/js/main.7a61a4c5.js",
     "static/js/453.670e15c7.chunk.js": "/netflix-styled-portfolio/static/js/453.670e15c7.chunk.js",
     "static/media/netflix-styled-portfolio.png": "/netflix-styled-portfolio/static/media/netflix-styled-portfolio.31e824c3d8dfaa20bbe0.png",
     "static/media/hungry-monkey-game.png": "/netflix-styled-portfolio/static/media/hungry-monkey-game.610108f797cacd207a6a.png",
@@ -15,12 +15,12 @@
     "static/media/design-scoring-tool.avif": "/netflix-styled-portfolio/static/media/design-scoring-tool.f171464a683c4fc52e2a.avif",
     "static/media/rbac.jpeg": "/netflix-styled-portfolio/static/media/rbac.3b83d7f84621b5275328.jpeg",
     "index.html": "/netflix-styled-portfolio/index.html",
-    "main.69c6da1b.css.map": "/netflix-styled-portfolio/static/css/main.69c6da1b.css.map",
-    "main.bc925983.js.map": "/netflix-styled-portfolio/static/js/main.bc925983.js.map",
+    "main.9683fd33.css.map": "/netflix-styled-portfolio/static/css/main.9683fd33.css.map",
+    "main.7a61a4c5.js.map": "/netflix-styled-portfolio/static/js/main.7a61a4c5.js.map",
     "453.670e15c7.chunk.js.map": "/netflix-styled-portfolio/static/js/453.670e15c7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69c6da1b.css",
-    "static/js/main.bc925983.js"
+    "static/css/main.9683fd33.css",
+    "static/js/main.7a61a4c5.js"
   ]
 }
