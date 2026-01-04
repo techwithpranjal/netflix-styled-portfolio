@@ -141,6 +141,20 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                 Summary
               </Button>
             )}
+            {project.sampleUrl && (
+              <Button
+                size="sm"
+                variant="outline"
+                className="bg-red-600 hover:bg-red-700 text-white flex-1"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  window.open(project.sampleUrl, "_blank");
+                }}
+              >
+                <ExternalLink className="w-4 h-4 mr-2" />
+                Sample code
+              </Button>
+            )}
             {project.linkUrl && (
               <Button
                 size="sm"

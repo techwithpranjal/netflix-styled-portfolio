@@ -54,23 +54,37 @@ const About = () => {
             </h3>
             <div className="space-y-4 text-gray-300 leading-relaxed">
               <p>
-                With over 5 years of experience in software development, I
-                specialize in creating robust, scalable web applications using
-                cutting-edge technologies. My journey began with a curiosity for
-                problem-solving and has evolved into a passion for crafting
-                exceptional digital experiences.
+                I’m a Software Engineer at Dell Technologies, focused on
+                building frontend-heavy, full-stack web systems that scale and
+                deliver measurable business impact.
               </p>
               <p>
-                I thrive in collaborative environments where I can contribute to
-                both frontend and backend development, ensuring seamless
-                integration and optimal performance. My experience spans from
-                building responsive user interfaces to designing complex backend
-                architectures and APIs.
+                Over the past 3.5+ years, I’ve worked across React-based user
+                interfaces, backend services in Python, and platform tooling to
+                support large-scale design evaluation, customer experience
+                analytics, and internal product ecosystems. My work spans
+                building production-grade UI platforms, browser extensions, data
+                pipelines, and dashboards used across multiple stakeholder
+                teams.
+              </p>
+              <p>
+                At Dell, I contributed to the evolution of an end-to-end design
+                intelligence workflow, grown from an early proof of concept into
+                a multi-component system including a UI scoring platform,
+                JavaScript browser extension, remediation workbench, analytics
+                dashboards, and large-scale web scraping pipelines. These
+                systems process 100+ design metrics across ~4M webpages, improve
+                accessibility and usability standards, and support data-driven
+                UI decisions at scale. I’ve also worked on modernizing customer
+                analytics platforms, consolidating fragmented applications into
+                cohesive experiences, improving adoption, and strengthening
+                engineering practices through test-driven development, CI/CD
+                improvements, and cloud-native deployments.
               </p>
               <p>
                 Outside of work, you’ll often find me practicing yoga to reset
                 my focus, catching up on a good cricket match, or binge-watching
-                tech documentaries and movies that spark new ideas.
+                documentaries and movies that spark new ideas.
               </p>
             </div>
           </div>
@@ -104,8 +118,7 @@ const About = () => {
                             {exp.position}
                           </h4>
                           <p className="text-red-500 font-medium mb-1">
-                            {exp.company} {exp.team ? `| ${exp.team}` : ""} 
-                            
+                            {exp.company} {exp.team ? `| ${exp.team}` : ""}
                           </p>
                           {/* {exp.location && (
                             <div className="flex items-center text-gray-400 text-sm">

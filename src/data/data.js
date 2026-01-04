@@ -35,28 +35,25 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Design Scoring Tool",
+    title: "In-Browser UI Design Scoring Web Extension",
     description:
-      "Automated scoring tool that evaluates UI designs using accessibility, readability, and design-metric analysis to improve overall experience quality.",
+      "Lightweight browser extension for real-time, in-context evaluation of UI accessibility, readability, and design quality directly on live webpages.",
     longDescription:
-      "Developed an automated web application to assess UI designs based on WCAG accessibility standards, readability factors, and cognitive load metrics. The on demand tool is powered by a large-scale Python scraping pipeline to analyze 4M+ web pages, extracting 100+ design attributes per page to correlate UI quality with customer lifetime value. Delivered insights are used to refine design decisions and improve overall user experience across 100+ product UI layouts.",
+      "Built a JavaScript-based browser extension that analyzes UI elements directly in the DOM to surface accessibility, readability, and design quality insights in real time. The extension integrates with a scoring engine to highlight issues inline, enabling designers and engineers to identify and fix UI gaps without leaving the page. This lightweight version was created as a demo-friendly representation of a larger production system used to evaluate design quality at scale.",
     technologies: [
-      "React",
-      "Python",
-      "Flask",
-      "MySQL",
-      "Pandas",
-      "Web Scraping",
+      "JavaScript",
+      "Browser Extension APIs",
+      "DOM APIs",
+      "Accessibility APIs",
       "Axe-core",
-      "Selenium",
-      "WCAG Standards",
-      "UI/UX Design",
+      "HTML",
+      "CSS",
     ],
-    categories: ["Full Stack", "Professional"],
+    categories: ["Frontend", "Professional"],
     image: designScoringProject + "?w=800&h=600&fit=crop",
     demoUrl: "",
     githubUrl: "",
-    summaryUrl: "https://example.com/design-scoring-tool-summary.pdf",
+    summaryUrl: "",
     type: "highlighted",
     completedDate: "2024-09-10",
   },
@@ -80,7 +77,7 @@ export const projects = [
     image: customerSurveyAnalytics + "?w=800&h=600&fit=crop",
     demoUrl: "",
     githubUrl: "",
-    summaryUrl: "https://example.com/customer-survey-analytics-summary.pdf",
+    summaryUrl: "",
     type: "highlighted",
     completedDate: "2024-08-15",
   },
@@ -120,7 +117,7 @@ export const projects = [
       "Tailwind CSS",
       "Framer Motion",
       "JavaScript",
-      "EmailJS"
+      "EmailJS",
     ],
     categories: ["Frontend", "Personal"],
     image: portfolioPreview + "?w=800&h=600&fit=crop",
@@ -128,7 +125,7 @@ export const projects = [
     githubUrl: "https://github.com/techwithpranjal/netflix-styled-portfolio",
     type: "regular",
     completedDate: "2025-01-15",
-  },  
+  },
   // {
   //   id: 5,
   //   title: "Real-time Chat Application",
@@ -167,16 +164,17 @@ export const projects = [
       "Python Flask",
       "REST APIs",
       "CI/CD",
-      "Kubernetes"
+      "Kubernetes",
     ],
     categories: ["Backend", "Professional"],
     image: authServicePreview + "?w=800&h=600&fit=crop",
     demoUrl: "",
     githubUrl: "",
-    summaryUrl: "https://example.com/auth-rbac-service-summary.pdf",
+    summaryUrl: "",
+    sampleUrl: "https://github.com/techwithpranjal/sentry-lite-rbac",
     type: "regular",
     completedDate: "2023-10-01",
-  },  
+  },
   // {
   //   id: 6,
   //   title: "Machine Learning Model API",
@@ -208,20 +206,14 @@ export const projects = [
       "A sleek ToDesktop-inspired web app clone with smooth animations, floating UI elements, and interactive customizations.",
     longDescription:
       "Built a clean and modern ToDesktop-style interface using Tailwind CSS, focusing on seamless animations, floating card layouts, and interactive toggle controls. The project recreates the look and feel of desktop application customization panels, with a refined design system, smooth hover transitions, responsive layouts, and modular component organization. Ideal for showcasing UI/UX craftsmanship and animation work using utility-first CSS.",
-    technologies: [
-      "HTML",
-      "CSS",
-      "Tailwind CSS",
-      "JavaScript",
-      "Animations"
-    ],
+    technologies: ["HTML", "CSS", "Tailwind CSS", "JavaScript", "Animations"],
     categories: ["Frontend", "Personal"],
     image: toDesktopClone + "?w=800&h=600&fit=crop",
     demoUrl: "https://techwithpranjal.github.io/to-desktop-clone/",
     githubUrl: "https://github.com/techwithpranjal/to-desktop-clone",
     type: "regular",
-    completedDate: "2025-02-01"
-  },  
+    completedDate: "2025-02-01",
+  },
   {
     id: 7,
     title: "Overview of Document Image Denoising and Restoration Techniques",
@@ -346,7 +338,7 @@ export const experience = [
     id: 1,
     company: "Dell Technologies",
     team: "Behavioral Science",
-    position: "Software Developer 2",
+    position: "Software Development Engineer II",
     location: "Bangalore",
     duration: "Feb 2024 - Present",
     type: "work",
@@ -357,7 +349,7 @@ export const experience = [
     id: 2,
     company: "Dell Technologies",
     team: "Customer Sentiment",
-    position: "Software Developer 1",
+    position: "Software Development Engineer I",
     location: "Hyderabad",
     duration: "Aug 2022 - Jan 2024",
     type: "work",
@@ -367,7 +359,7 @@ export const experience = [
   {
     id: 3,
     company: "Dell Technologies",
-    position: "Software Intern",
+    position: "Software Development Intern",
     location: "Bangalore",
     team: "Employee Lifecycle",
     duration: "Jun 2021 - Jul 2021",
@@ -384,9 +376,7 @@ export const experience = [
     type: "education",
     description:
       "Thesis on “Document Image Restoration Techniques using Generative Neural Networks.” Graduated with CGPA 8.8. Relevant coursework: Data Structures, Algorithms, Database Management, Computer Networks, Machine Learning, Web Development.",
-
-
-  }
+  },
 ];
 
 export const categories = [
@@ -399,6 +389,64 @@ export const categories = [
   "Personal",
 ];
 
+export const awards = [
+  {
+    title: "Innovation Delight Award",
+    description: (
+      <>
+        Recognized by{" "}
+        <span className="text-red-500 font-medium">
+          Dell Technologies (2025)
+        </span>{" "}
+        for delivering an end-to-end design intelligence workflow, a system
+        spanning design scoring tools, a browser extension, remediation
+        workbench, data dashboards, and large-scale web scraping pipelines.
+      </>
+    ),
+  },
+  {
+    title: "Game Changer Award",
+    description: (
+      <>
+        Recognized by{" "}
+        <span className="text-red-500 font-medium">
+          Dell Technologies (2023)
+        </span>{" "}
+        for innovation and measurable business impact in the
+        Voice-of-Customer-as-a-Service platform initiative.
+      </>
+    ),
+  },
+  {
+    title: "AIR 61 – National Creativity Aptitude Test",
+    description: (
+      <>
+        Achieved{" "}
+        <span className="text-red-500 font-medium">
+          All-India Rank 61 (2021)
+        </span>{" "}
+        for excellence in creative reasoning and analytical problem-solving.
+      </>
+    ),
+  },
+  {
+    title: "1st Runner-Up – CryptHunt 2020",
+    description: (
+      <>
+        Secured{" "}
+        <span className="text-red-500 font-medium">
+          2nd place among 40 teams
+        </span>{" "}
+        in a college-level innovation{" "}
+        <span className="font-medium">
+          treasure hunt and coding competition
+        </span>
+        , focused on logical reasoning and problem-solving.
+      </>
+    ),
+  },
+];
+
 export const links = {
   gitHubLink: "https://github.com/techwithpranjal",
   linkedInLink: "https://www.linkedin.com/in/pranjal-jadhav851/",
@@ -409,7 +457,8 @@ export const certifications = [
   {
     id: 1,
     title: "Full Stack Web Development",
-    description: "Completed a project-driven course on frontend and backend web development.",
+    description:
+      "Completed a project-driven course on frontend and backend web development.",
     skills: ["HTML", "CSS", "JavaScript", "React", "Node.js"],
     year: "2021",
     linkUrl: VerzeoCertification,
@@ -417,15 +466,18 @@ export const certifications = [
   {
     id: 2,
     title: "ReactJS, Routers & Redux",
-    description: "Comprehensive hands-on course covering React Hooks, Redux Toolkit, and React Router.",
+    description:
+      "Comprehensive hands-on course covering React Hooks, Redux Toolkit, and React Router.",
     skills: ["React", "Redux", "Routing", "Hooks", "SPAs"],
     year: "2024",
-    courseUrl: "https://www.udemy.com/course/react-the-complete-guide-incl-redux"
+    courseUrl:
+      "https://www.udemy.com/course/react-the-complete-guide-incl-redux",
   },
   {
     id: 3,
     title: "REST APIs with Flask & Python",
-    description: "Built RESTful APIs with authentication, database models, and deployment best practices.",
+    description:
+      "Built RESTful APIs with authentication, database models, and deployment best practices.",
     skills: ["Flask", "Python", "REST APIs", "JWT"],
     year: "2023",
     courseUrl: "https://www.udemy.com/course/rest-api-flask-and-python/",
@@ -433,34 +485,40 @@ export const certifications = [
   {
     id: 4,
     title: "Deep Learning",
-    description: "Mastered neural networks, CNNs, and sequence models with TensorFlow and Keras.",
+    description:
+      "Mastered neural networks, CNNs, and sequence models with TensorFlow and Keras.",
     skills: ["Deep Learning", "TensorFlow", "Keras", "CNN"],
     year: "2023",
-    linkUrl: "https://www.coursera.org/account/accomplishments/verify/MQQJQMZD9G5H"
+    linkUrl:
+      "https://www.coursera.org/account/accomplishments/verify/MQQJQMZD9G5H",
   },
   {
     id: 5,
     title: "Machine Learning",
-    description: "Learned ML algorithms including regression, SVM, and clustering using Python.",
+    description:
+      "Learned ML algorithms including regression, SVM, and clustering using Python.",
     skills: ["Machine Learning", "Python", "Scikit-learn"],
     year: "2022",
-    linkUrl: "https://www.coursera.org/account/accomplishments/verify/6JGSYZAB4PVM",
+    linkUrl:
+      "https://www.coursera.org/account/accomplishments/verify/6JGSYZAB4PVM",
   },
   {
     id: 6,
     title: "Data Science",
-    description: "Gained skills in data analysis, visualization, and statistical modeling using Python.",
+    description:
+      "Gained skills in data analysis, visualization, and statistical modeling using Python.",
     skills: ["Data Science", "Python", "Pandas", "Matplotlib"],
     year: "2021",
-    linkUrl: "https://trainings.internshala.com/verify-certificate/D5C76B35-4325-F8DB-72C7-9ECE6FCB78F1/",
+    linkUrl:
+      "https://trainings.internshala.com/verify-certificate/D5C76B35-4325-F8DB-72C7-9ECE6FCB78F1/",
   },
   {
     id: 7,
     title: "Cisco Certified Network Associate Routing and Switching (CCNA)",
-    description: "Validated knowledge of networking fundamentals, IP connectivity, and security.",
+    description:
+      "Validated knowledge of networking fundamentals, IP connectivity, and security.",
     skills: ["Networking", "Routing", "Switching", "Security"],
     year: "2020",
-    linkUrl: CCNACert
-
-  }
+    linkUrl: CCNACert,
+  },
 ];

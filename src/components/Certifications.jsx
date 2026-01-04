@@ -1,9 +1,9 @@
 import React from "react";
-import { certifications } from "../data/data";
+import { certifications, awards } from "../data/data";
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
-import { ExternalLink, Calendar, Award, BookOpen } from "lucide-react";
+import { ExternalLink, Award, BookOpen } from "lucide-react";
 
 const Certifications = () => {
   return (
@@ -100,42 +100,19 @@ const Certifications = () => {
         </h4>
 
         <div className="space-y-4">
-          <Card className="bg-gray-900 border-gray-800 p-6 hover:border-red-600 transition-all duration-300">
-            <h4 className="text-lg font-semibold text-white flex items-center mb-1">
-              <Award className="w-5 h-5 text-red-500 mr-2" />
-              Game Changer Award
-            </h4>
-            <p className="text-gray-400 text-sm">
-              Recognized by{" "}
-              <span className="text-red-500 font-medium">
-                Dell Technologies
-              </span>{" "}
-              (2023) for innovation and measurable business impact in the
-              Voice-of-Customer-as-a-Service platform initiative.
-            </p>
-          </Card>
+          {awards.map((award) => (
+            <Card
+              key={award.title}
+              className="bg-gray-900 border-gray-800 p-6 hover:border-red-600 transition-all duration-300"
+            >
+              <h4 className="text-lg font-semibold text-white flex items-center mb-1">
+                <Award className="w-5 h-5 text-red-500 mr-2" />
+                {award.title}
+              </h4>
 
-          <Card className="bg-gray-900 border-gray-800 p-6 hover:border-red-600 transition-all duration-300">
-            <h4 className="text-lg font-semibold text-white flex items-center mb-1">
-              <Award className="w-5 h-5 text-red-500 mr-2" />
-              AIR 61 – National Creativity Aptitude Test
-            </h4>
-            <p className="text-gray-400 text-sm">
-              Achieved All-India Rank 61 (2021) for excellence in creative
-              reasoning and analytical problem-solving.
-            </p>
-          </Card>
-
-          <Card className="bg-gray-900 border-gray-800 p-6 hover:border-red-600 transition-all duration-300">
-            <h4 className="text-lg font-semibold text-white flex items-center mb-1">
-              <Award className="w-5 h-5 text-red-500 mr-2" />
-              1st Runner-Up – CryptHunt 2020
-            </h4>
-            <p className="text-gray-400 text-sm">
-              Secured 2nd place among 40 teams in a nationwide cryptography and
-              logic-based hack event.
-            </p>
-          </Card>
+              <p className="text-gray-400 text-sm">{award.description}</p>
+            </Card>
+          ))}
         </div>
       </div>
     </section>

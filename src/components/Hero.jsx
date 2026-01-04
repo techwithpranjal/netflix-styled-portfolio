@@ -23,16 +23,17 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Heading */}
           <div className="mb-8">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-              Full Stack
-              <span className="block text-red-600 bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent">
-                Developer
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+              Software
+              <span class="ml-3 text-red-600 bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent">
+                Engineer
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-              Crafting exceptional digital experiences with modern web
-              technologies. From concept to deployment, I build scalable
-              applications that make a difference.
+              <span className="font-bold text-white">Frontend-focused</span>{" "}
+              engineer with 3.5+ years of experience building and scaling{" "}
+              <span className="font-bold text-white">full-stack</span> web
+              applications.
             </p>
           </div>
 
@@ -88,8 +89,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-    
     </section>
   );
 };
