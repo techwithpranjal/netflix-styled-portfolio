@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/netflix-styled-portfolio/static/css/main.69c6da1b.css",
-    "main.js": "/netflix-styled-portfolio/static/js/main.68b7880d.js",
+    "main.js": "/netflix-styled-portfolio/static/js/main.bc925983.js",
     "static/js/453.670e15c7.chunk.js": "/netflix-styled-portfolio/static/js/453.670e15c7.chunk.js",
     "static/media/netflix-styled-portfolio.png": "/netflix-styled-portfolio/static/media/netflix-styled-portfolio.31e824c3d8dfaa20bbe0.png",
     "static/media/hungry-monkey-game.png": "/netflix-styled-portfolio/static/media/hungry-monkey-game.610108f797cacd207a6a.png",
@@ -16,11 +16,11 @@
     "static/media/rbac.jpeg": "/netflix-styled-portfolio/static/media/rbac.3b83d7f84621b5275328.jpeg",
     "index.html": "/netflix-styled-portfolio/index.html",
     "main.69c6da1b.css.map": "/netflix-styled-portfolio/static/css/main.69c6da1b.css.map",
-    "main.68b7880d.js.map": "/netflix-styled-portfolio/static/js/main.68b7880d.js.map",
+    "main.bc925983.js.map": "/netflix-styled-portfolio/static/js/main.bc925983.js.map",
     "453.670e15c7.chunk.js.map": "/netflix-styled-portfolio/static/js/453.670e15c7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.69c6da1b.css",
-    "static/js/main.68b7880d.js"
+    "static/js/main.bc925983.js"
   ]
 }
