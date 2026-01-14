@@ -35,6 +35,32 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Centralized Auth & RBAC Service",
+    subtitle: "OAuth2 + JWT-based authentication and authorization platform",
+    description:
+      "Developed a centralized authentication and authorization service using OAuth2 and JWT, enabling secure role-based access for 15+ enterprise applications.",
+    longDescription:
+      "Designed and implemented a production-grade authentication and authorization platform leveraging OAuth 2.0 and JWT tokens. Built Role-Based Access Control (RBAC) to standardize permissions across 15+ internal applications, reducing duplicated security logic and improving compliance. Integrated granular role and privilege assignment, token lifecycle management, service-to-service authentication, and audit logging. Collaborated with cross-functional teams to onboard applications seamlessly and enhance security posture across the ecosystem.",
+    technologies: [
+      "OAuth2",
+      "JWT",
+      "RBAC",
+      "Python Flask",
+      "REST APIs",
+      "CI/CD",
+      "Kubernetes",
+    ],
+    categories: ["Backend", "Professional", "Personal"],
+    image: authServicePreview + "?w=800&h=600&fit=crop",
+    demoUrl: "https://techwithpranjal.github.io/sentry-lite-rbac/#/login",
+    githubUrl: "https://github.com/techwithpranjal/sentry-lite-rbac",
+    summaryUrl: "",
+    sampleUrl: "",
+    type: "highlighted",
+    completedDate: "2023-10-01",
+  },
+  {
+    id: 3,
     title: "In-Browser UI Design Scoring Web Extension",
     description:
       "Lightweight browser extension for real-time, in-context evaluation of UI accessibility, readability, and design quality directly on live webpages.",
@@ -56,30 +82,6 @@ export const projects = [
     summaryUrl: "",
     type: "highlighted",
     completedDate: "2024-09-10",
-  },
-  {
-    id: 3,
-    title: "CSAT Survey Analytics",
-    description:
-      "Unified Voice-of-Customer-as-a-Service (VoCaaS) platform for customer satisfaction (CSAT) survey analytics, driving actionable customer insights.",
-    longDescription:
-      "Built a unified analytics experience for Voice-of-Customer-as-a-Service (VoCaaS) insights by standardizing UI/UX across CSAT survey applications. Migrated legacy systems to DDS 2.0, integrated 15+ CSAT tools using Flask-based microservices and REST APIs, and delivered an interactive React dashboard for customer sentiment analysis. The platform improved user adoption by 60% and reduced operational effort by 50%, enabling data-driven improvements in customer experience strategy.",
-    technologies: [
-      "React",
-      "Flask",
-      "Python",
-      "MySQL",
-      "REST APIs",
-      "Microservices Architecture",
-      "Machine Learning",
-    ],
-    categories: ["Full Stack", "Professional"],
-    image: customerSurveyAnalytics + "?w=800&h=600&fit=crop",
-    demoUrl: "",
-    githubUrl: "",
-    summaryUrl: "",
-    type: "highlighted",
-    completedDate: "2024-08-15",
   },
   // {
   //   id: 4,
@@ -149,32 +151,6 @@ export const projects = [
   //   type: "regular",
   //   completedDate: "2023-12-18",
   // },
-  {
-    id: 5,
-    title: "Centralized Auth & RBAC Service",
-    subtitle: "OAuth2 + JWT-based authentication and authorization platform",
-    description:
-      "Developed a centralized authentication and authorization service using OAuth2 and JWT, enabling secure role-based access for 15+ enterprise applications.",
-    longDescription:
-      "Designed and implemented a production-grade authentication and authorization platform leveraging OAuth 2.0 and JWT tokens. Built Role-Based Access Control (RBAC) to standardize permissions across 15+ internal applications, reducing duplicated security logic and improving compliance. Integrated granular role and privilege assignment, token lifecycle management, service-to-service authentication, and audit logging. Collaborated with cross-functional teams to onboard applications seamlessly and enhance security posture across the ecosystem.",
-    technologies: [
-      "OAuth2",
-      "JWT",
-      "RBAC",
-      "Python Flask",
-      "REST APIs",
-      "CI/CD",
-      "Kubernetes",
-    ],
-    categories: ["Backend", "Professional"],
-    image: authServicePreview + "?w=800&h=600&fit=crop",
-    demoUrl: "",
-    githubUrl: "",
-    summaryUrl: "",
-    sampleUrl: "https://github.com/techwithpranjal/sentry-lite-rbac",
-    type: "regular",
-    completedDate: "2023-10-01",
-  },
   // {
   //   id: 6,
   //   title: "Machine Learning Model API",
@@ -199,7 +175,7 @@ export const projects = [
   //   completedDate: "2024-01-25",
   // },
   {
-    id: 7,
+    id: 5,
     title: "ToDesktop UI Clone",
     subtitle: "A modern desktop-style web UI built with Tailwind CSS",
     description:
@@ -213,6 +189,30 @@ export const projects = [
     githubUrl: "https://github.com/techwithpranjal/to-desktop-clone",
     type: "regular",
     completedDate: "2025-02-01",
+  },
+  {
+    id: 6,
+    title: "CSAT Survey Analytics",
+    description:
+      "Unified Voice-of-Customer-as-a-Service (VoCaaS) platform for customer satisfaction (CSAT) survey analytics, driving actionable customer insights.",
+    longDescription:
+      "Built a unified analytics experience for Voice-of-Customer-as-a-Service (VoCaaS) insights by standardizing UI/UX across CSAT survey applications. Migrated legacy systems to DDS 2.0, integrated 15+ CSAT tools using Flask-based microservices and REST APIs, and delivered an interactive React dashboard for customer sentiment analysis. The platform improved user adoption by 60% and reduced operational effort by 50%, enabling data-driven improvements in customer experience strategy.",
+    technologies: [
+      "React",
+      "Flask",
+      "Python",
+      "MySQL",
+      "REST APIs",
+      "Microservices Architecture",
+      "Machine Learning",
+    ],
+    categories: ["Full Stack", "Professional"],
+    image: customerSurveyAnalytics + "?w=800&h=600&fit=crop",
+    demoUrl: "",
+    githubUrl: "",
+    summaryUrl: "",
+    type: "regular",
+    completedDate: "2024-08-15",
   },
   {
     id: 7,
