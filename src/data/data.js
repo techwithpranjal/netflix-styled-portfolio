@@ -78,10 +78,10 @@ export const projects = [
     categories: ["Frontend", "Professional"],
     image: designScoringProject + "?w=800&h=600&fit=crop",
     demoUrl: "",
-    githubUrl: "",
+    githubUrl: "https://github.com/techwithpranjal/design-lint",
     summaryUrl: "",
     type: "highlighted",
-    completedDate: "2024-09-10",
+    completedDate: "2026-01-10",
   },
   // {
   //   id: 4,
