@@ -77,7 +77,7 @@ export const projects = [
     ],
     categories: ["Frontend", "Professional"],
     image: designScoringProject + "?w=800&h=600&fit=crop",
-    demoUrl: "",
+    demoUrl: "https://github.com/techwithpranjal/design-lint/releases/tag/v1.0.0",
     githubUrl: "https://github.com/techwithpranjal/design-lint",
     summaryUrl: "",
     type: "highlighted",
