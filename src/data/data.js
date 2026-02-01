@@ -1,5 +1,5 @@
-import hungryMonkeyGame from "../assets/images/hungry-monkey-game.png";
-import designScoringProject from "../assets/images/design-scoring-tool.avif";
+import hungryMonkeyGame from "../assets/images/hungry-monkey.png";
+import designScoringProject from "../assets/images/design-lint.png";
 import customerSurveyAnalytics from "../assets/images/customer-survey-analytics.jpeg";
 import DocumentImageDenoising from "../assets/images/document-image-denoising.jpeg";
 import DocImageRestoration from "../assets/images/doc-img-restoration.jpeg";
@@ -7,7 +7,7 @@ import PatchEncoderDocImg from "../assets/images/patch-encoder-doc-img.png";
 import VerzeoCertification from "../assets/images/verzeo-internship-certificate.jpg";
 import CCNACert from "../assets/images/CCNA-cert.png";
 import portfolioPreview from "../assets/images/netflix-styled-portfolio.png";
-import authServicePreview from "../assets/images/rbac.jpeg";
+import authServicePreview from "../assets/images/sentry-lite-rbac.png";
 import toDesktopClone from "../assets/images/to-desktop-clone.png";
 
 export const projects = [
@@ -20,13 +20,14 @@ export const projects = [
     longDescription:
       "Designed and built a gamified learning experience using Tailwind CSS to teach concepts interactively. The game features animated characters and themed levels that progressively introduce Tailwind utilities. Players type Tailwind classes in a built-in code editor to match a target layout, with instant visual feedback, custom animations, sound effects, and a progress system. Implemented dynamic class evaluation, level-based components, contextual hints, and in-game documentation mapping CSS properties to Tailwind utility classes.",
     technologies: [
+      "JavaScript",
       "React",
       "Tailwind CSS",
+      "Flexbox",
       "Framer Motion",
-      "JavaScript",
-      "Custom Hooks",
+      "Vite",
     ],
-    categories: ["Frontend", "Personal"],
+    categories: ["Frontend"],
     image: hungryMonkeyGame + "?w=800&h=600&fit=crop",
     demoUrl: "https://techwithpranjal.github.io/hungry-monkey-game/",
     githubUrl: "https://github.com/techwithpranjal/hungry-monkey-game",
@@ -35,80 +36,61 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Centralized Auth & RBAC Service",
+    title: "Sentry Lite",
     subtitle: "OAuth2 + JWT-based authentication and authorization platform",
     description:
-      "Developed a centralized authentication and authorization service using OAuth2 and JWT, enabling secure role-based access for 15+ enterprise applications.",
+      "A centralized authentication and authorization service using OAuth2 and JWT, enabling secure role-based access for 15+ enterprise applications.",
     longDescription:
       "Designed and implemented a production-grade authentication and authorization platform leveraging OAuth 2.0 and JWT tokens. Built Role-Based Access Control (RBAC) to standardize permissions across 15+ internal applications, reducing duplicated security logic and improving compliance. Integrated granular role and privilege assignment, token lifecycle management, service-to-service authentication, and audit logging. Collaborated with cross-functional teams to onboard applications seamlessly and enhance security posture across the ecosystem.",
     technologies: [
+      "Angular",
+      "TypeScript",
+      "Python",
+      "FastAPI",
+      "SQLite",
+      "REST APIs",
       "OAuth2",
       "JWT",
-      "RBAC",
-      "Python Flask",
-      "REST APIs",
-      "CI/CD",
-      "Kubernetes",
+      "Role-Based Access Control (RBAC)",
     ],
-    categories: ["Backend", "Professional", "Personal"],
+    categories: ["Full Stack"],
     image: authServicePreview + "?w=800&h=600&fit=crop",
     demoUrl: "https://techwithpranjal.github.io/sentry-lite-rbac/#/login",
     githubUrl: "https://github.com/techwithpranjal/sentry-lite-rbac",
     summaryUrl: "",
     sampleUrl: "",
     type: "highlighted",
-    completedDate: "2023-10-01",
+    completedDate: "2025-10-01",
   },
   {
     id: 3,
-    title: "In-Browser UI Design Scoring Web Extension",
+    title: "Design Lint",
     description:
-      "Lightweight browser extension for real-time, in-context evaluation of UI accessibility, readability, and design quality directly on live webpages.",
+      "Lightweight browser extension for real-time, in-context evaluation of UI accessibility, readability, and design quality on live webpages.",
     longDescription:
       "Built a JavaScript-based browser extension that analyzes UI elements directly in the DOM to surface accessibility, readability, and design quality insights in real time. The extension integrates with a scoring engine to highlight issues inline, enabling designers and engineers to identify and fix UI gaps without leaving the page. This lightweight version was created as a demo-friendly representation of a larger production system used to evaluate design quality at scale.",
     technologies: [
+      "React",
       "JavaScript",
       "Browser Extension APIs",
       "DOM APIs",
       "Accessibility APIs",
       "Axe-core",
-      "HTML",
-      "CSS",
+      "HTML5",
+      "CSS3",
     ],
-    categories: ["Frontend", "Professional"],
-    image: designScoringProject + "?w=800&h=600&fit=crop",
-    demoUrl: "https://github.com/techwithpranjal/design-lint/releases/tag/v1.0.0",
+    categories: ["Frontend"],
+    image: designScoringProject + "?w=600&h=600&fit=crop",
+    demoUrl:
+      "https://github.com/techwithpranjal/design-lint/releases/tag/v1.0.0",
     githubUrl: "https://github.com/techwithpranjal/design-lint",
     summaryUrl: "",
     type: "highlighted",
     completedDate: "2026-01-10",
   },
-  // {
-  //   id: 4,
-  //   title: "API Gateway Service",
-  //   description:
-  //     "Microservices API gateway with rate limiting, authentication, load balancing, and monitoring capabilities.",
-  //   longDescription:
-  //     "Designed and implemented a robust API gateway service to manage microservices communication. The gateway handles authentication, rate limiting, request routing, load balancing, and provides comprehensive monitoring and logging capabilities. Built with Node.js and Redis for caching, it supports both REST and GraphQL APIs. The service includes circuit breaker patterns for fault tolerance and integrates with monitoring tools like Prometheus and Grafana for observability.",
-  //   technologies: [
-  //     "Node.js",
-  //     "Redis",
-  //     "Docker",
-  //     "Kubernetes",
-  //     "Prometheus",
-  //     "GraphQL",
-  //   ],
-  //   categories: ["Backend"],
-  //   image:
-  //     "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop",
-  //   demoUrl: null,
-  //   githubUrl: "https://github.com/username/api-gateway",
-  //   type: "regular",
-  //   completedDate: "2024-04-05",
-  // },
   {
     id: 4,
-    title: "Netflix-Styled Developer Portfolio",
+    title: "Netflix-Styled Portfolio",
     subtitle: "A modern personal portfolio inspired by Netflix UI",
     description:
       "A sleek, Netflix-inspired portfolio featuring card-based sections, rich animations, and a bold red-black theme.",
@@ -116,64 +98,17 @@ export const projects = [
       "Designed and developed a fully responsive developer portfolio styled after Netflix’s signature UI. Built with React, Tailwind CSS, and Framer Motion, the site uses cinematic layouts, dynamic hover interactions, category-based project carousels, and polished section transitions. Includes a custom contact form powered by EmailJS, a timeline-based Experience & Education section, and an optimized two-column About layout. The design emphasizes accessibility, performance, and storytelling through a visually engaging interface inspired by the Netflix dashboard.",
     technologies: [
       "React",
-      "Tailwind CSS",
-      "Framer Motion",
       "JavaScript",
-      "EmailJS",
+      "Tailwind CSS",
+      "Responsive UI Design",
     ],
-    categories: ["Frontend", "Personal"],
+    categories: ["Frontend"],
     image: portfolioPreview + "?w=800&h=600&fit=crop",
     demoUrl: "https://techwithpranjal.github.io/netflix-styled-portfolio/",
     githubUrl: "https://github.com/techwithpranjal/netflix-styled-portfolio",
     type: "regular",
     completedDate: "2025-01-15",
   },
-  // {
-  //   id: 5,
-  //   title: "Real-time Chat Application",
-  //   description:
-  //     "Multi-room chat application with file sharing, emoji reactions, user presence indicators, and message encryption.",
-  //   longDescription:
-  //     "Built a feature-rich real-time chat application supporting multiple chat rooms, private messaging, and group conversations. The application includes advanced features like file sharing, emoji reactions, typing indicators, user presence status, and end-to-end message encryption. The frontend is built with React and TypeScript, while the backend uses Node.js with Socket.io for real-time communication. MongoDB stores chat history and user data with proper indexing for optimal performance.",
-  //   technologies: [
-  //     "React",
-  //     "TypeScript",
-  //     "Node.js",
-  //     "Socket.io",
-  //     "MongoDB",
-  //     "Crypto-js",
-  //   ],
-  //   categories: ["Full Stack"],
-  //   image:
-  //     "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=800&h=600&fit=crop",
-  //   demoUrl: "https://demo-chat.example.com",
-  //   githubUrl: "https://github.com/username/chat-app",
-  //   type: "regular",
-  //   completedDate: "2023-12-18",
-  // },
-  // {
-  //   id: 6,
-  //   title: "Machine Learning Model API",
-  //   description:
-  //     "RESTful API serving trained ML models for image classification with automated model versioning and A/B testing.",
-  //   longDescription:
-  //     "Developed a production-ready API service for deploying and serving machine learning models. The service supports multiple model versions, A/B testing capabilities, and automated model updates. Built with Flask and integrated with TensorFlow Serving, it provides endpoints for image classification, sentiment analysis, and recommendation systems. The API includes comprehensive monitoring, logging, and performance metrics collection. Docker containerization ensures consistent deployment across environments.",
-  //   technologies: [
-  //     "Python",
-  //     "Flask",
-  //     "TensorFlow",
-  //     "Docker",
-  //     "PostgreSQL",
-  //     "Redis",
-  //   ],
-  //   categories: ["Backend"],
-  //   image:
-  //     "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=600&fit=crop",
-  //   demoUrl: null,
-  //   githubUrl: "https://github.com/username/ml-api",
-  //   type: "regular",
-  //   completedDate: "2024-01-25",
-  // },
   {
     id: 5,
     title: "ToDesktop UI Clone",
@@ -183,7 +118,7 @@ export const projects = [
     longDescription:
       "Built a clean and modern ToDesktop-style interface using Tailwind CSS, focusing on seamless animations, floating card layouts, and interactive toggle controls. The project recreates the look and feel of desktop application customization panels, with a refined design system, smooth hover transitions, responsive layouts, and modular component organization. Ideal for showcasing UI/UX craftsmanship and animation work using utility-first CSS.",
     technologies: ["HTML", "CSS", "Tailwind CSS", "JavaScript", "Animations"],
-    categories: ["Frontend", "Personal"],
+    categories: ["Frontend"],
     image: toDesktopClone + "?w=800&h=600&fit=crop",
     demoUrl: "https://techwithpranjal.github.io/to-desktop-clone/",
     githubUrl: "https://github.com/techwithpranjal/to-desktop-clone",
@@ -192,28 +127,44 @@ export const projects = [
   },
   {
     id: 6,
-    title: "CSAT Survey Analytics",
+    title: "API Gateway Service",
     description:
-      "Unified Voice-of-Customer-as-a-Service (VoCaaS) platform for customer satisfaction (CSAT) survey analytics, driving actionable customer insights.",
+      "Microservices API gateway with rate limiting, authentication, load balancing, and monitoring capabilities.",
     longDescription:
-      "Built a unified analytics experience for Voice-of-Customer-as-a-Service (VoCaaS) insights by standardizing UI/UX across CSAT survey applications. Migrated legacy systems to DDS 2.0, integrated 15+ CSAT tools using Flask-based microservices and REST APIs, and delivered an interactive React dashboard for customer sentiment analysis. The platform improved user adoption by 60% and reduced operational effort by 50%, enabling data-driven improvements in customer experience strategy.",
-    technologies: [
-      "React",
-      "Flask",
-      "Python",
-      "MySQL",
-      "REST APIs",
-      "Microservices Architecture",
-      "Machine Learning",
-    ],
-    categories: ["Full Stack", "Professional"],
-    image: customerSurveyAnalytics + "?w=800&h=600&fit=crop",
-    demoUrl: "",
-    githubUrl: "",
-    summaryUrl: "",
+      "Designed and implemented a robust API gateway service to manage microservices communication. The gateway handles authentication, rate limiting, request routing, load balancing, and provides comprehensive monitoring and logging capabilities. Built with Node.js and Redis for caching, it supports both REST and GraphQL APIs. The service includes circuit breaker patterns for fault tolerance and integrates with monitoring tools like Prometheus and Grafana for observability.",
+    technologies: ["Python Flask", "RESTful APIs", "Kubernetes"],
+    categories: ["Backend"],
+    image:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop",
+    demoUrl: null,
+    githubUrl: "https://github.com/username/api-gateway",
     type: "regular",
-    completedDate: "2024-08-15",
+    completedDate: "2024-04-05",
   },
+  // {
+  //   id: 6,
+  //   title: "CSAT Survey Analytics",
+  //   description:
+  //     "Unified Voice-of-Customer-as-a-Service (VoCaaS) platform for customer satisfaction (CSAT) survey analytics, driving actionable customer insights.",
+  //   longDescription:
+  //     "Built a unified analytics experience for Voice-of-Customer-as-a-Service (VoCaaS) insights by standardizing UI/UX across CSAT survey applications. Migrated legacy systems to DDS 2.0, integrated 15+ CSAT tools using Flask-based microservices and REST APIs, and delivered an interactive React dashboard for customer sentiment analysis. The platform improved user adoption by 60% and reduced operational effort by 50%, enabling data-driven improvements in customer experience strategy.",
+  //   technologies: [
+  //     "React",
+  //     "Flask",
+  //     "Python",
+  //     "MySQL",
+  //     "REST APIs",
+  //     "Microservices Architecture",
+  //     "Machine Learning",
+  //   ],
+  //   categories: ["Full Stack"],
+  //   image: customerSurveyAnalytics + "?w=800&h=600&fit=crop",
+  //   demoUrl: "",
+  //   githubUrl: "",
+  //   summaryUrl: "",
+  //   type: "regular",
+  //   completedDate: "2024-08-15",
+  // },
   {
     id: 7,
     title: "Overview of Document Image Denoising and Restoration Techniques",
@@ -385,8 +336,6 @@ export const categories = [
   "Frontend",
   "Backend",
   "Research",
-  "Professional",
-  "Personal",
 ];
 
 export const awards = [
