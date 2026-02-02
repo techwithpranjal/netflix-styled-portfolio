@@ -23,7 +23,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Heading */}
           <div className="mb-8">
-            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 class="flex flex-wrap justify-center items-center text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               Software
               <span class="ml-3 text-red-600 bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent">
                 Engineer
