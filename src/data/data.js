@@ -289,6 +289,17 @@ export const experience = [
     id: 1,
     company: "Dell Technologies",
     team: "Behavioral Science",
+    position: "Senior Software Engineer",
+    location: "Bangalore",
+    duration: "Mar 2026 - Present",
+    type: "work",
+    description:
+    "Leading behavioral science initiatives focused on data-driven UX research and experimentation platforms. Building scalable analytics and insight tools in collaboration with researchers and data scientists, while mentoring engineers for technical growth.",
+  },
+  {
+    id: 2,
+    company: "Dell Technologies",
+    team: "Behavioral Science",
     position: "Software Development Engineer II",
     location: "Bangalore",
     duration: "Feb 2024 - Present",
@@ -297,7 +308,7 @@ export const experience = [
       "Built automated UI scoring tools improving WCAG compliance. Deployed Flask APIs on Kubernetes, increasing uptime by 40%. Led NLP-driven chat analytics cutting manual effort by 50%, and introduced TDD with Jest & Vitest for full CI/CD maturity.",
   },
   {
-    id: 2,
+    id: 3,
     company: "Dell Technologies",
     team: "Customer Sentiment",
     position: "Software Development Engineer I",
@@ -308,7 +319,7 @@ export const experience = [
       "Migrated CSAT apps to DDS 2.0 and built a unified VoCaaS platform with React & Flask, boosting adoption by 60%. Automated issue tracking reduced stakeholder effort by 50%, with secure RBAC via OAuth2 & JWT.",
   },
   {
-    id: 3,
+    id: 4,
     company: "Dell Technologies",
     position: "Software Development Intern",
     location: "Bangalore",
@@ -319,7 +330,7 @@ export const experience = [
       "Built Grafana dashboards for real-time Workday monitoring, reducing troubleshooting time by one-third weekly.",
   },
   {
-    id: 4,
+    id: 5,
     company: "Cummins College of Engineering for Women",
     position: "BTech in Information Technology",
     location: "Pune",
